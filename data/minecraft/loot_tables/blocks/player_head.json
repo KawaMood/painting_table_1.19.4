@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "block_entity",
+                            "ops": [
+                                {
+                                    "source": "SkullOwner",
+                                    "target": "SkullOwner",
+                                    "op": "replace"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "block_entity",
+                            "ops": [
+                                {
+                                    "source": "SkullOwner.Name",
+                                    "target": "display.Name",
+                                    "op": "replace"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "minecraft:player_head"
+                }
+            ]
+        }
+    ]
+}

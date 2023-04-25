@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:hopper"
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_painting_table:actions/player_placed_hopper"
+    }
+}

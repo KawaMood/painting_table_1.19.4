@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:black_stained_glass_pane",
+        "minecraft:blue_dye",
+        "minecraft:light_gray_stained_glass_pane",
+        "minecraft:player_head",
+        "minecraft:quartz_block",
+        "minecraft:red_dye",
+        "minecraft:writable_book",
+        "minecraft:yellow_dye"
+    ]
+}

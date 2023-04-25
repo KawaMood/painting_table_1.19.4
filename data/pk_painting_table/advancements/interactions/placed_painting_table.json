@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "item": {
+                    "nbt": "{pkCustomBlockPlacer:1b,pkPaintingTable:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_painting_table:blocks/painting_table/place/placed_by_player"
+    }
+}

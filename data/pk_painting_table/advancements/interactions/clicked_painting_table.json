@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "block": {
+                        "nbt": "{Items:[{tag:{pkPaintingTable:1b}}]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_painting_table:blocks/painting_table/actions/right_click_on_block/trigger_from_player"
+    }
+}

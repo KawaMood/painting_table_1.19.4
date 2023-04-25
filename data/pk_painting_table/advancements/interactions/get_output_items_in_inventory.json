@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{pkOutput:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_painting_table:actions/player_get_output_items_in_inventory"
+    }
+}
