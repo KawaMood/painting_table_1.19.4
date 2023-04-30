@@ -1,7 +1,6 @@
 #> pk_painting_table:packages/dimension_marker/marker_initialize
 
-# Increment and set dimension id (start at 100)
-execute unless score $next pk.dimension.id matches 99.. run scoreboard players set $next pk.dimension.id 99
+# Increment dimension id
 scoreboard players add $next pk.dimension.id 1
 scoreboard players operation @s pk.dimension.id = $next pk.dimension.id
 

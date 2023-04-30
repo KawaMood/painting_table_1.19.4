@@ -1,21 +1,20 @@
-#> pk_painting_table:base/uninstall/after_10_ticks
+#> pk_painting_table:base/uninstall/after_1s
 
-# Remove Painting Tables blocks and entities when chunks are (normally) fully loaded
-execute as @e[type=marker,tag=pk.pa_ta.uninstall.forceload_chunk] at @s run function pk_painting_table:base/uninstall/remove_custom_block
+# Remove custom blocks when chunks are (normally) fully loaded
+execute as @e[type=marker,tag=pk.custom_block.uninstall] at @s run function pk_painting_table:base/uninstall/remove_custom_block
 
 # Remove current data pack storage
-data remove storage pk.pa_ta:data Block
 data remove storage pk.pa_ta:data Blocks
 
 # Remove current data pack scores
-scoreboard objectives remove pk.pa_ta.has_output_items
-scoreboard objectives remove pk.pa_ta.has_output_items_prev
+scoreboard objectives add pk.pa_ta.has_output_items dummy
+scoreboard objectives add pk.pa_ta.has_output_items_prev dummy
 
 # Remove the current data pack from the installed PK data packs list
 data remove storage pk.common:data Datapacks[{Name:"Painting Table"}]
 
 # Logs
-execute unless score $logs.load pk.value matches ..0 run tellraw @a [{"text": "Uninstalled ","color": "red"},{"text": "PK Painting Table","color": "aqua","bold": true},{"text": " successfully","color": "red"}]
+execute unless score $logs.load pk.value matches ..0 run tellraw @a [{"text": "Uninstalled ","color": "yellow"},{"text": "PK Painting Table","color": "aqua","bold": true},{"text": " successfully.\nYou can now safely remove it from the \"datapacks/\" folder of your world","color": "yellow"}]
 
 # Remove common features if there is no PK data pack installed anymore
 execute unless data storage pk.common:data Datapacks[{}] run function pk_painting_table:base/uninstall/remove_common_features

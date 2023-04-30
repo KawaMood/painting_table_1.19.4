@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "pk_painting_table:blocks/painting_table/place/placed_by_player"
+        "function": "pk_painting_table:blocks/painting_table/actions/placed_painting_table_placer/trigger"
     }
 }

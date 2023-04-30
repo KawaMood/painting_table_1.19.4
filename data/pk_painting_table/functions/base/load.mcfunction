@@ -62,6 +62,8 @@ scoreboard objectives add pk.pa_ta.has_output_items_prev dummy
 function pk_painting_table:packages/dimension_marker/load
 # RNG
 function pk_painting_table:packages/random/load
+# Air toggling
+function pk_painting_table:packages/air_toggling/load
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Updates:

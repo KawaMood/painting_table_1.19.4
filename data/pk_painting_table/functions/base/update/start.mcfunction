@@ -4,6 +4,8 @@
 # Update depending on the current version 
 # - Changes from V.2.0.2
 execute if score $pk.pa_ta.version pk.value matches ..2 run function pk_painting_table:base/update/revisions/3
+# - Changes from V.2.0.4
+execute if score $pk.pa_ta.version pk.value matches ..4 run function pk_painting_table:base/update/revisions/5/start
 
 # Set the data pack current version score
 scoreboard players set $pk.pa_ta.version pk.value 5

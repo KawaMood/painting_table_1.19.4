@@ -17,7 +17,7 @@ tag @s add pk.pa_ta.painting_table.controller
 function pk_painting_table:blocks/painting_table/environment/blocks/verify_hoppers
 
 # Store Painting Block info
-function pk_painting_table:blocks/painting_table/place/store_block_info
+function pk_painting_table:blocks/painting_table/place/blocks_list/store
 
 # Store information to the controller
 data modify entity @s data.PaintingTable set from storage pk.common:data Temp.PaintingTable

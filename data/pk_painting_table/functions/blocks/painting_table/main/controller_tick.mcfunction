@@ -1,4 +1,4 @@
-#> pk_painting_table:blocks/painting_table/controller_tick
+#> pk_painting_table:blocks/painting_table/main/controller_tick
 
 # Set scores
 scoreboard players operation $temp pk.custom_block.component.id = @s pk.custom_block.component.id
